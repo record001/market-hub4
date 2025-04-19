@@ -1,0 +1,38 @@
+.productFeature__card {
+  background-image: url("../image/shakl.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 255px;
+  height: 386px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.productFeature__card img {
+  width: 50%;
+}
+
+.productFeature__card h4 {
+  font-family: var(--font-family);
+font-weight: 700;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+text-align: center;
+color: #1d1d1d;
+margin-bottom: 4px;
+}
+.productFeature__card h5 {
+  font-family: var(--font-family);
+font-weight: 700;
+font-size: 14px;
+line-height: 143%;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+text-align: center;
+color: #1d1d1d;
+}

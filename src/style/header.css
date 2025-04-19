@@ -1,0 +1,126 @@
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main__header {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+li {
+  list-style: none;
+}
+.header li {
+  font-family: var(--font-family);
+font-weight: 700;
+font-size: 14px;
+line-height: 129%;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+text-align: center;
+color: #fff;
+}
+.main__header li {
+  font-family: var(--font-family);
+font-weight: 700;
+font-size: 14px;
+line-height: 129%;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+text-align: center;
+color: #000;
+}
+.header li a{
+  font-family: var(--font-family);
+font-weight: 700;
+font-size: 14px;
+line-height: 129%;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+text-align: center;
+color: #fff;
+}
+.main__header li a{
+  font-family: var(--font-family);
+font-weight: 700;
+font-size: 14px;
+line-height: 129%;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+text-align: center;
+color: #000;
+}
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-2000px);
+  transition: 500ms;
+}
+
+.show_modal {
+  transform: translateY(0px);
+  transition: 500ms;
+}
+.modal li {
+  color: #fff;
+  font-size: 30px;
+  font-family: var(--font-family);
+  margin-bottom: 20px;
+}
+.modal li a{
+  color: #fff;
+  font-size: 30px;
+  font-family: var(--font-family);
+  margin-bottom: 20px;
+}
+
+.close_btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50px;
+  right: 30px;
+}
+
+@media(max-width:900px) {
+  .header__list:nth-of-type(2) {
+    display: none;
+  }
+}
+@media(max-width:550px) {
+  .header__list {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+}
