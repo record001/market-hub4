@@ -99,3 +99,16 @@ h2 {
 .tanlandi {
   background-color: slategray;
 }
+body {
+  background-color: #F2E6DF;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);gap: 50px;
+}
+.upform {
+  display: none;
+}
+.showUpForm {
+  display: block;
+}

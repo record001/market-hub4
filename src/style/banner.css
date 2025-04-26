@@ -1,0 +1,127 @@
+.banner {
+  max-width: 1309px;
+  width: 100%;
+  margin: 60px auto;
+  padding: 37px 85px;
+  border: 1px solid black;
+  position: relative;
+}
+.x1 {
+  border: 1px solid #000;
+width: 92px;
+height: 0px;
+position: absolute;
+transform: rotate(23deg);
+left: -3px;
+top: 18px;
+}
+.x2 {
+  border: 1px solid #000;
+width: 92px;
+height: 0px;
+position: absolute;
+transform: rotate(-23deg);
+right:  -3px;
+top: 18px;
+}
+.x3 {
+  border: 1px solid #000;
+width: 92px;
+height: 0px;
+position: absolute;
+transform: rotate(-22deg);
+left:  -3px;
+bottom:  18px;
+}
+.x4 {
+  border: 1px solid #000;
+width: 92px;
+height: 0px;
+position: absolute;
+transform: rotate(22deg);
+right:  -3px;
+bottom:  18px;
+}
+.banner__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2,1fr); 
+  height: 491px;
+}
+.banner__content {
+  background-color: #e8ccba;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 70px;
+  border: 1px solid black;
+
+}
+.banner__content h2 {
+  font-family: var(--font-family);
+font-weight: 700;
+font-size: 20px;
+line-height: 180%;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+text-align: center;
+color: #1d1d1d;
+}
+.banner__content p {
+  font-family: var(--second-family);
+font-weight: 400;
+font-size: 18px;
+line-height: 133%;
+letter-spacing: 0.01em;
+text-align: center;
+color: #1d1d1d;
+margin-top: 20px;
+margin-bottom: 30px;
+}
+.banner__content button {
+  clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+  font-family: var(--font-family);
+font-weight: 700;
+font-size: 14px;
+line-height: 143%;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+text-align: center;
+color: #f3e7e0;
+width: 293px;
+height: 44px;
+border-radius: 2px;
+background-color: #1d1d1d;
+border: none;
+}
+
+
+.banner__img img {
+  height: 100%;
+}
+
+@media(max-width:1200px) {
+  .banner img {
+    width: 100%;
+  }
+}
+@media(max-width:1000px) {
+  .banner__content {
+    padding: 0 20px;
+  }
+}
+@media(max-width:800px) {
+  .banner {
+    border: none;
+    padding: 0 15px;
+  }
+  .x1, .x2, .x3, .x4 {
+    display: none;
+  }
+  .banner__wrapper {
+   grid-template-columns: repeat(1,1fr) ;
+  }
+  .banner__content {
+    padding: 50px 20px;
+  }
+}

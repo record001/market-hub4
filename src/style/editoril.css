@@ -1,0 +1,72 @@
+.edit {
+  padding: 205px 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.edit__content {
+  width: 668px;
+height: 291px;
+background-color: #e8ccba;
+padding: 68px 118px 58px;
+margin: 0 auto;
+clip-path: polygon(7% 0, 94% 0, 100% 13%, 100% 85%, 94% 100%, 6% 100%, 0 84%, 0 12%);
+border: 1px solid   black;
+}
+.edit__content h2 {
+  font-family: var(--font-family);
+font-weight: 700;
+font-size: 18px;
+line-height: 189%;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+text-align: center;
+color: #1d1d1d;
+margin-bottom: 48px;
+}
+.edit__content input {
+  width: 100%;
+  height: 28px;
+  border: none;
+  border-bottom: 1px solid #1d1d1d;
+  background-color: transparent;
+  padding-bottom: 7px;
+}
+.edit__content input::placeholder {
+  font-family: var(--font-family);
+font-weight: 700;
+font-size: 14px;
+line-height: 143%;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+text-align: center;
+color: #1d1d1d;
+}
+.edit button {
+  clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+  width: 253px;
+height: 44px;
+background-color: #1d1d1d;
+font-family: var(--font-family);
+font-weight: 700;
+font-size: 14px;
+line-height: 143%;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+text-align: center;
+color: #f3e7e0;
+display: block;
+margin: 0 auto;
+position: absolute;
+
+border: none;
+left: 0;
+right: 0;
+z-index: 99;
+bottom: -22px;
+}
+
+.edit form {
+  position: relative;
+}

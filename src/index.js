@@ -8,6 +8,8 @@ import RegisterPage from "./page/RegisterPage";
 import HomePage from "./page/HomePage";
 import AdminPage from "./page/AdminPage";
 import PLPPage from "./page/PLPPage";
+import Products from "./page/Products";
+import Category from "./page/Category";
 
 const myRouter = createBrowserRouter([
   {
@@ -34,6 +36,14 @@ const myRouter = createBrowserRouter([
       {
         path: "/plp",
         element: <PLPPage />,
+      },
+      {
+        path: "/products/34u8fuhre4uhjtrtrgh",
+        element: <Products />,
+      },
+      {
+        path: "/category/34u8fuhre4uhjtrtrgh3ewd2de",
+        element: <Category />,
       },
     ],
   },
