@@ -10,6 +10,7 @@ import AdminPage from "./page/AdminPage";
 import PLPPage from "./page/PLPPage";
 import Products from "./page/Products";
 import Category from "./page/Category";
+import PDP from "./page/PDP";
 
 const myRouter = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ const myRouter = createBrowserRouter([
         path: "/category/34u8fuhre4uhjtrtrgh3ewd2de",
         element: <Category />,
       },
+      {
+        path:"/pdp/:proID",
+        element:<PDP />
+      }
     ],
   },
 ]);
